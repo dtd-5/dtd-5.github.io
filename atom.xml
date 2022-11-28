@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Hello World</title>
   
-  
+  <subtitle>完全符合向日葵的花语，我的眼中只有你</subtitle>
   <link href="http://dtd-5.github.io/atom.xml" rel="self"/>
   
   <link href="http://dtd-5.github.io/"/>
@@ -10,7 +10,7 @@
   <id>http://dtd-5.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Duan Tao</name>
     
   </author>
   
