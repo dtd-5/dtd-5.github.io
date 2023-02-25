@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="dtd-5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2023/02/25/uniapp入门到实战项目教程/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Redefine Theme">
+    <meta property="og:description" content="Hexo Theme Redefine">
+    <meta property="og:url" content="http://example.com2023/02/25/uniapp入门到实战项目教程/">
+    <meta property="og:image" content="/images/redefine-logo.svg">
+    <meta property="og:site_name" content="小破站">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Redefine Theme">
+    <meta name="twitter:description" content="Hexo Theme Redefine">
+    <meta name="twitter:image" content="/images/redefine-logo.svg">
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-logo.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-logo.svg">
+    <meta name="theme-color" content="#005080">
+    <link rel="shortcut icon" href="/images/redefine-logo.svg">
+    
+    <title>
+        
+        小破站
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/assets/fonts.css">
+
+    
+    
+    
+    
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/redefine-avatar.svg","favicon":"/images/redefine-logo.svg","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://evan.beee.top/img/wallhaven-wqery6-light.webp","dark":"https://evan.beee.top/img/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":"只要朝着一个方向努力，一切都会变得得心应手。","custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":true},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.1.2","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}}};
+    REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+    
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="menu-wrapper">
+    
+    <div class="menu-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                小破站
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        HOME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        ARCHIVES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/categories"  >
+                                    
+                                        
+                                        CATEGORIES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/tags"  >
+                                    
+                                        
+                                        TAGS
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/links"  >
+                                    
+                                        
+                                        LINKS
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        ABOUT&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://github.com/dtd-5">GITHUB
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="menu-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                HOME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                ARCHIVES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/categories"  >
+                             
+                                
+                                CATEGORIES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/tags"  >
+                             
+                                
+                                TAGS
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/links"  >
+                             
+                                
+                                LINKS
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                ABOUT&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/dtd-5">GITHUB</a>
+                            </li>
+                        
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular"></h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/redefine-avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">dtd-5</span>
+                            
+                                <span class="author-label">lol</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="pc">2023-02-25 14:35:31</span>
+        <span class="mobile">2023-02-25 14:35</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="pc">2023-02-25 19:54:53</span>
+            <span class="mobile">2023-02-25 19:54</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: uniapp入门</span><br><span class="line">top: true </span><br><span class="line">categories: uniapp</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="uniapp项目结构介绍"><a href="#uniapp项目结构介绍" class="headerlink" title="uniapp项目结构介绍"></a>uniapp项目结构介绍</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">┌─uniCloud              云空间目录，阿里云为uniCloud-aliyun,腾讯云为uniCloud-tcb </span><br><span class="line">│─components            符合vue组件规范的uni-app组件目录</span><br><span class="line">│  └─comp-a.vue         可复用的a组件</span><br><span class="line">├─hybrid                App端存放本地html文件的目录</span><br><span class="line">├─platforms             存放各平台专用页面的目录</span><br><span class="line">├─pages                 业务页面文件存放的目录</span><br><span class="line">│  ├─index</span><br><span class="line">│  │  └─index.vue       index页面</span><br><span class="line">│  └─list</span><br><span class="line">│     └─list.vue        list页面</span><br><span class="line">├─static                存放应用引用的本地静态资源（如图片、视频等）的目录，注意：静态资源只能存放于此</span><br><span class="line">├─uni_modules           存放[uni_module](/uni_modules)。</span><br><span class="line">├─wxcomponents          存放小程序组件的目录</span><br><span class="line">├─nativeplugins         App原生插件 详见</span><br><span class="line">├─unpackage             非工程代码，一般存放运行或发行的编译结果</span><br><span class="line">├─main.js               Vue初始化入口文件</span><br><span class="line">├─App.vue               应用配置，用来配置App全局样式以及监听 应用生命周期</span><br><span class="line">├─manifest.json         配置应用名称、appid、logo、版本等打包信息</span><br><span class="line">├─pages.json            配置页面路由、导航条、选项卡等页面类信息</span><br><span class="line">└─uni.scss              这里是uni-app内置的常用样式变量</span><br></pre></td></tr></table></figure></div>
+
+<h5 id="uniapp开发规范"><a href="#uniapp开发规范" class="headerlink" title="uniapp开发规范"></a>uniapp开发规范</h5><h6 id="1-页面和组件文件遵循vue的规范"><a href="#1-页面和组件文件遵循vue的规范" class="headerlink" title="1.页面和组件文件遵循vue的规范"></a>1.页面和组件文件遵循vue的规范</h6><p>​	1.新建页面 goods.vue</p>
+<p>​	2.新建页面 it-item.vue</p>
+<h6 id="2-内置标签使用小程序的规范"><a href="#2-内置标签使用小程序的规范" class="headerlink" title="2.内置标签使用小程序的规范"></a>2.内置标签使用小程序的规范</h6><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;view&gt;小程序中的块级标签&lt;view&gt;</span><br></pre></td></tr></table></figure></div>
+
+<h6 id="3-数据绑定和事件处理使用vue的规范"><a href="#3-数据绑定和事件处理使用vue的规范" class="headerlink" title="3.数据绑定和事件处理使用vue的规范"></a>3.数据绑定和事件处理使用vue的规范</h6><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;view class=&quot;item&quot; v-for=&quot;item in list&quot; :key=&quot;item&quot; @click=&quot;handleClick(item)&quot;&gt;&#123;&#123;item&#125;&#125;&lt;/view&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data()&#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				list:[&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;]</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods:&#123;</span><br><span class="line">			handleClick(letter)&#123;</span><br><span class="line">				console.log(letter)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></div>
+
+<h6 id="4-能力接口API-使用-微信小程序的规范"><a href="#4-能力接口API-使用-微信小程序的规范" class="headerlink" title="4.能力接口API 使用 微信小程序的规范"></a>4.能力接口API 使用 微信小程序的规范</h6><p>​	比如弹出显示框， 发送网络请求等等</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">wx.showToast(&#123;</span><br><span class="line">  title: &#x27;成功&#x27;,</span><br><span class="line">  icon: &#x27;success&#x27;,</span><br><span class="line">  duration: 2000</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">wx.request(&#123;</span><br><span class="line">  url: &#x27;example.php&#x27;, //仅为示例，并非真实的接口地址</span><br><span class="line">  data: &#123;</span><br><span class="line">    x: &#x27;&#x27;,</span><br><span class="line">    y: &#x27;&#x27;</span><br><span class="line">  &#125;,</span><br><span class="line">  header: &#123;</span><br><span class="line">    &#x27;content-type&#x27;: &#x27;application/json&#x27; // 默认值</span><br><span class="line">  &#125;,</span><br><span class="line">  success (res) &#123;</span><br><span class="line">    console.log(res.data)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></div>
+
+<h6 id="5-uniapp生命周期"><a href="#5-uniapp生命周期" class="headerlink" title="5.uniapp生命周期"></a>5.uniapp生命周期</h6><p>uniapp中，生命周期分为三大类</p>
+<p>1.应用生命周期 小程序规范</p>
+<p>2.页面生命周期 小程序规范</p>
+<p>3.组件生命周期  vue规范</p>
+<h6 id="6-应用生命周期App-vue"><a href="#6-应用生命周期App-vue" class="headerlink" title="6.应用生命周期App.vue"></a>6.应用生命周期App.vue</h6><table>
+<thead>
+<tr>
+<th>函数名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>onLaunch</td>
+<td>当uniapp初始化完成时触发（全局只触发一次）</td>
+</tr>
+<tr>
+<td>onShow</td>
+<td>当uniapp启动，或从后台进入前台显示</td>
+</tr>
+<tr>
+<td>onHide</td>
+<td>当uniapp从前台进入后台</td>
+</tr>
+<tr>
+<td>onError</td>
+<td>当uniapp报错时触发</td>
+</tr>
+<tr>
+<td>onUniNViewMessage</td>
+<td>对 <code>nvue</code> 页面发送的数据进行监听，可参考 <a class="link"   href="https://link.juejin.cn/?target=https://uniapp.dcloud.io/tutorial/nvue-api?id=communication" >nvue 向 vue 通讯(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+</tr>
+<tr>
+<td>onUnhandledRejection</td>
+<td>对未处理的 Promise 拒绝事件监听函数（2.8.1+）</td>
+</tr>
+<tr>
+<td>onPageNotFound</td>
+<td>页面不存在监听函数</td>
+</tr>
+<tr>
+<td>onThemeChange</td>
+<td>监听系统主题变化</td>
+</tr>
+</tbody></table>
+<h6 id="7-页面生命周期"><a href="#7-页面生命周期" class="headerlink" title="7.页面生命周期"></a>7.页面生命周期</h6><table>
+<thead>
+<tr>
+<th align="left">函数名</th>
+<th align="left">说明</th>
+<th>平台差异说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">onInit</td>
+<td align="left">监听页面初始化，其参数同 onLoad 参数，为上个页面传递的数据，参数类型为 Object（用于页面传参），触发时机早于 onLoad</td>
+<td>百度小程序</td>
+<td>3.1.0+</td>
+</tr>
+<tr>
+<td align="left">onLoad</td>
+<td align="left">监听页面加载，其参数为上个页面传递的数据，参数类型为 Object（用于页面传参），参考<a class="link"   href="https://link.juejin.cn/?target=https://uniapp.dcloud.net.cn/api/router%23navigateto" >示例 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onShow</td>
+<td align="left">监听页面显示。页面每次出现在屏幕上都触发，包括从下级页面点返回露出当前页面</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onReady</td>
+<td align="left">监听页面初次渲染完成。注意如果渲染速度快，会在页面进入动画完成前触发</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onHide</td>
+<td align="left">监听页面隐藏</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onUnload</td>
+<td align="left">监听页面卸载</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onResize</td>
+<td align="left">监听窗口尺寸变化</td>
+<td>App、微信小程序、快手小程序</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onPullDownRefresh</td>
+<td align="left">监听用户下拉动作，一般用于下拉刷新，参考<a class="link"   href="https://link.juejin.cn/?target=https://uniapp.dcloud.net.cn/api/ui/pulldown" >示例 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onReachBottom</td>
+<td align="left">页面滚动到底部的事件（不是scroll-view滚到底），常用于下拉下一页数据。具体见下方注意事项</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onTabItemTap</td>
+<td align="left">点击 tab 时触发，参数为Object，具体见下方注意事项</td>
+<td>微信小程序、QQ小程序、支付宝小程序、百度小程序、H5、App、快手小程序、京东小程序</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onShareAppMessage</td>
+<td align="left">用户点击右上角分享</td>
+<td>微信小程序、QQ小程序、支付宝小程序、字节小程序、飞书小程序、快手小程序、京东小程序</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onPageScroll</td>
+<td align="left">监听页面滚动，参数为Object</td>
+<td>nvue暂不支持</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onNavigationBarButtonTap</td>
+<td align="left">监听原生标题栏按钮点击事件，参数为Object</td>
+<td>App、H5</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onBackPress</td>
+<td align="left">监听页面返回，返回 event &#x3D; {from:backbutton、 navigateBack} ，backbutton 表示来源是左上角返回按钮或 android 返回键；navigateBack表示来源是 uni.navigateBack ；详细说明及使用：<a class="link"   href="https://link.juejin.cn/?target=http://ask.dcloud.net.cn/article/35120" >onBackPress 详解 (opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。支付宝小程序只有真机能触发，只能监听非navigateBack引起的返回，不可阻止默认行为。</td>
+<td>app、H5、支付宝小程序</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">onNavigationBarSearchInputChanged</td>
+<td align="left">监听原生标题栏搜索输入框输入内容变化事件</td>
+<td>App、H5</td>
+<td>1.6.0</td>
+</tr>
+<tr>
+<td align="left">onNavigationBarSearchInputConfirmed</td>
+<td align="left">监听原生标题栏搜索输入框搜索事件，用户点击软键盘上的“搜索”按钮时触发。</td>
+<td>App、H5</td>
+<td>1.6.0</td>
+</tr>
+<tr>
+<td align="left">onNavigationBarSearchInputClicked</td>
+<td align="left">监听原生标题栏搜索输入框点击事件（pages.json 中的 searchInput 配置 disabled 为 true 时才会触发）</td>
+<td>App、H5</td>
+<td>1.6.0</td>
+</tr>
+<tr>
+<td align="left">onShareTimeline</td>
+<td align="left">监听用户点击右上角转发到朋友圈</td>
+<td>微信小程序</td>
+<td>2.8.1+</td>
+</tr>
+<tr>
+<td align="left">onAddToFavorites</td>
+<td align="left">监听用户点击右上角收藏</td>
+<td>微信小程序</td>
+<td>2.8.1+</td>
+</tr>
+</tbody></table>
+<h6 id="8-组件生命周期"><a href="#8-组件生命周期" class="headerlink" title="8.组件生命周期"></a>8.组件生命周期</h6><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>函数名</td>
+<td>说明</td>
+<td>平台差异说明</td>
+<td>最低版本</td>
+</tr>
+<tr>
+<td>beforeCreate</td>
+<td>在实例初始化之前被调用。<a class="link"   href="https://link.juejin.cn/?target=https://cn.vuejs.org/v2/api/%23beforeCreate" >详见(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>created</td>
+<td>在实例创建完成后被立即调用。<a class="link"   href="https://link.juejin.cn/?target=https://cn.vuejs.org/v2/api/%23created" >详见(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>beforeMount</td>
+<td>在挂载开始之前被调用。<a class="link"   href="https://link.juejin.cn/?target=https://cn.vuejs.org/v2/api/%23beforeMount" >详见(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mounted</td>
+<td>挂载到实例上去之后调用。<a class="link"   href="https://link.juejin.cn/?target=https://cn.vuejs.org/v2/api/%23mounted" >详见 (opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>注意：此处并不能确定子组件被全部挂载，如果需要子组件完全挂载之后在执行操作可以使用<code>$nextTick</code><a class="link"   href="https://link.juejin.cn/?target=https://cn.vuejs.org/v2/api/%23Vue-nextTick" >Vue官方文档(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>beforeUpdate</td>
+<td>数据更新时调用，发生在虚拟 DOM 打补丁之前。<a class="link"   href="https://link.juejin.cn/?target=https://cn.vuejs.org/v2/api/%23beforeUpdate" >详见(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td>仅H5平台支持</td>
+<td></td>
+</tr>
+<tr>
+<td>updated</td>
+<td>由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。<a class="link"   href="https://link.juejin.cn/?target=https://cn.vuejs.org/v2/api/%23updated" >详见(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td>仅H5平台支持</td>
+<td></td>
+</tr>
+<tr>
+<td>beforeDestroy</td>
+<td>实例销毁之前调用。在这一步，实例仍然完全可用。<a class="link"   href="https://link.juejin.cn/?target=https://cn.vuejs.org/v2/api/%23beforeDestroy" >详见(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>destroyed</td>
+<td>Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。<a class="link"   href="https://link.juejin.cn/?target=https://cn.vuejs.org/v2/api/%23destroyed" >详见(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="响应式单位-rpx"><a href="#响应式单位-rpx" class="headerlink" title="响应式单位 rpx"></a>响应式单位 rpx</h3><blockquote>
+<p><a class="link"   href="https://link.juejin.cn/?target=https://uniapp.dcloud.net.cn/tutorial/syntax-css.html%23%E5%B0%BA%E5%AF%B8%E5%8D%95%E4%BD%8D" >uniapp.dcloud.net.cn&#x2F;tutorial&#x2F;sy… <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</blockquote>
+<p>相对长度单位，功能类似于web端的 rem 和 vw，小程序首先推出，uniapp也是直接支持。一种根据屏幕宽度自适应的动态单位。以 750 宽的屏幕为基准，750rpx 恰好为屏幕宽度。</p>
+<p>其中uniapp做了以下设置，</p>
+<ol>
+<li>默认的设计稿宽度为 <code>375px</code>  因此存在  <code>1px = 2rpx</code></li>
+<li>默认 rpx支持最大宽度为  <code>960px</code>,超出则 按照 设计稿宽度 <code>375px</code> 来设置</li>
+</ol>
+<h3 id="scoped"><a href="#scoped" class="headerlink" title="scoped"></a>scoped</h3><ol>
+<li>vue开发的h5，单页面应用程序，每一个vue文件如果直接使用 class，多个文件的样式 冲突</li>
+<li>微信小程序 真正 多页面应用程序  物理隔离，页面中使用 class，不会相互影响</li>
+<li>uniapp做了一个设置，写vue代码，不需要主动加上 <code>scoped</code>，打包成h5端的时候自动添加上去，打包成 微信小程序端 不需要添加 scoped。</li>
+</ol>
+<h2 id="uniapp-多端开发"><a href="#uniapp-多端开发" class="headerlink" title="uniapp 多端开发"></a>uniapp 多端开发</h2><h3 id="条件编译"><a href="#条件编译" class="headerlink" title="条件编译"></a>条件编译</h3><p>条件编译是用特殊的注释作为标记，在编译时根据这些特殊的注释，将注释里面的代码编译到不同平台。</p>
+<p><strong>写法：</strong>以 #ifdef 或 #ifndef 加 <strong>%PLATFORM%</strong> 开头，以 #endif 结尾。</p>
+<ul>
+<li>#ifdef：if defined 仅在某平台存在</li>
+<li>#ifndef：if not defined 除了某平台均存在</li>
+<li>**%PLATFORM%**：平台名称</li>
+</ul>
+<p><strong>标签中</strong></p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--  #ifdef  %PLATFORM% --&gt;</span></span><br><span class="line">平台特有的组件</span><br><span class="line"><span class="comment">&lt;!--  #endif --&gt;</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>js中</strong></p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// #ifdef  %PLATFORM%</span></span><br><span class="line">平台特有的<span class="variable constant_">API</span>实现</span><br><span class="line"><span class="comment">// #endif</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>css</strong>中</p>
+<div class="highlight-container" data-rel="Css"><figure class="iseeu highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*  #ifdef  %PLATFORM%  */</span></span><br><span class="line">平台特有样式</span><br><span class="line"><span class="comment">/*  #endif  */</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+
+<table>
+<thead>
+<tr>
+<th>条件编译写法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>#ifdef <strong>APP-PLUS</strong> 需条件编译的代码 #endif</td>
+<td>仅出现在 App 平台下的代码</td>
+</tr>
+<tr>
+<td>#ifndef <strong>H5</strong> 需条件编译的代码  #endif</td>
+<td>除了 H5 平台，其它平台均存在的代码</td>
+</tr>
+<tr>
+<td>#ifdef <strong>H5</strong> || <strong>MP-WEIXIN</strong> 需条件编译的代码 #endif</td>
+<td>在 H5 平台或微信小程序平台存在的代码（这里只有||，不可能出现&amp;&amp;，因为没有交集）</td>
+</tr>
+</tbody></table>
+<p><strong>%PLATFORM%</strong> <strong>可取值如下：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>生效条件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>VUE3</td>
+<td>HBuilderX 3.2.0+ <a class="link"   href="https://link.juejin.cn/?target=https://ask.dcloud.net.cn/article/37834" >详情(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+</tr>
+<tr>
+<td>APP-PLUS-NVUE或APP-NVUE</td>
+<td>App nvue</td>
+</tr>
+<tr>
+<td>MP-WEIXIN</td>
+<td>微信小程序</td>
+</tr>
+<tr>
+<td>MP-ALIPAY</td>
+<td>支付宝小程序</td>
+</tr>
+<tr>
+<td>MP-BAIDU</td>
+<td>百度小程序</td>
+</tr>
+<tr>
+<td>MP-TOUTIAO</td>
+<td>字节跳动小程序</td>
+</tr>
+<tr>
+<td>MP-LARK</td>
+<td>飞书小程序</td>
+</tr>
+<tr>
+<td>MP-QQ</td>
+<td>QQ小程序</td>
+</tr>
+<tr>
+<td>MP-KUAISHOU</td>
+<td>快手小程序</td>
+</tr>
+<tr>
+<td>MP-JD</td>
+<td>京东小程序</td>
+</tr>
+<tr>
+<td>MP-360</td>
+<td>360小程序</td>
+</tr>
+<tr>
+<td>MP</td>
+<td>微信小程序&#x2F;支付宝小程序&#x2F;百度小程序&#x2F;字节跳动小程序&#x2F;飞书小程序&#x2F;QQ小程序&#x2F;360小程序</td>
+</tr>
+<tr>
+<td>QUICKAPP-WEBVIEW</td>
+<td>快应用通用(包含联盟、华为)</td>
+</tr>
+<tr>
+<td>QUICKAPP-WEBVIEW-UNION</td>
+<td>快应用联盟</td>
+</tr>
+<tr>
+<td>QUICKAPP-WEBVIEW-HUAWEI</td>
+<td>快应用华为</td>
+</tr>
+</tbody></table>
+<p><strong>支持的文件</strong></p>
+<ul>
+<li>.vue</li>
+<li>.js</li>
+<li>.css</li>
+<li>pages.json</li>
+<li>各预编译语言文件，如：.scss、.less、.stylus、.ts、.pug</li>
+</ul>
+<h4 id="static-目录的条件编译"><a href="#static-目录的条件编译" class="headerlink" title="static 目录的条件编译"></a>static 目录的条件编译</h4><p>在不同平台，引用的静态资源可能也存在差异，通过 static 的的条件编译可以解决此问题，static 目录下新建不同平台的专有目录（目录名称同 <code>%PLATFORM%</code> 值域,但字母均为小写），专有目录下的静态资源只有在特定平台才会编译进去。</p>
+<p>如以下目录结构，<code>a.png</code> 只有在微信小程序平台才会编译进去，<code>b.png</code> 在所有平台都会被编译。</p>
+<div class="highlight-container" data-rel="Css"><figure class="iseeu highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">┌─static                </span><br><span class="line">│  ├─mp-weixin</span><br><span class="line">│  │  └─<span class="selector-tag">a</span><span class="selector-class">.png</span>     </span><br><span class="line">│  └─<span class="selector-tag">b</span><span class="selector-class">.png</span></span><br><span class="line">├─<span class="selector-tag">main</span><span class="selector-class">.js</span>        </span><br><span class="line">├─App<span class="selector-class">.vue</span>      </span><br><span class="line">├─manifest<span class="selector-class">.json</span> </span><br><span class="line">└─pages<span class="selector-class">.json</span> </span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="整体目录条件编译"><a href="#整体目录条件编译" class="headerlink" title="整体目录条件编译"></a>整体目录条件编译</h4><p>如果想把各平台的页面文件更彻底的分开，也可以在uni-app项目根目录创建<code>platforms</code>目录，然后在下面进一步创建<code>app-plus</code>、<code>mp-weixin</code>等子目录，存放不同平台的文件。</p>
+<p><strong>注意</strong></p>
+<ul>
+<li><code>platforms</code>目录下只支持放置页面文件（即页面vue文件），如果需要对其他资源条件编译建议使用<a class="link"   href="https://link.juejin.cn/?target=https://uniapp.dcloud.io/platform?id=static-%E7%9B%AE%E5%BD%95%E7%9A%84%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91" >static 目录的条件编译(opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+<h3 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h3><blockquote>
+<p>尽量使用flex布局，因为全平台都支持</p>
+</blockquote>
+<h3 id="尺寸单位"><a href="#尺寸单位" class="headerlink" title="尺寸单位"></a>尺寸单位</h3><ol>
+<li>uniapp通用单位  <code>px</code>  , <code>rpx</code></li>
+<li>vue页面中支持  <code>rem</code> 、<code>vh</code>、<code>vw</code></li>
+<li>nvue 不支持 <code>百分比单位</code></li>
+</ol>
+<h3 id="css变量"><a href="#css变量" class="headerlink" title="css变量"></a>css变量</h3><table>
+<thead>
+<tr>
+<th>CSS 变量</th>
+<th>描述</th>
+<th>App</th>
+<th>小程序</th>
+<th>H5</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>–status-bar-height</td>
+<td>系统状态栏高度</td>
+<td><a class="link"   href="https://link.juejin.cn/?target=http://www.html5plus.org/doc/zh_cn/navigator.html%23plus.navigator.getStatusbarHeight" >系统状态栏高度 (opens new window) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、nvue 注意见下</td>
+<td>25px</td>
+<td>0</td>
+</tr>
+<tr>
+<td>–window-top</td>
+<td>内容区域距离顶部的距离</td>
+<td>0</td>
+<td>0</td>
+<td>NavigationBar 的高度</td>
+</tr>
+<tr>
+<td>–window-bottom</td>
+<td>内容区域距离底部的距离</td>
+<td>0</td>
+<td>0</td>
+<td>TabBar 的高度</td>
+</tr>
+</tbody></table>
+<h3 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h3><ul>
+<li><p>支持 base64 格式图片。</p>
+</li>
+<li><p>支持网络路径图片。</p>
+</li>
+<li><p>小程序不支持在 css 中使用本地文件。需以 base64 方式方可使用。</p>
+</li>
+<li><p>使用本地路径背景图片需注意：</p>
+<ol>
+<li>为方便开发者，在背景图片小于 40kb 时，<code>uni-app</code> 编译到不支持本地背景图的平台时，会自动将其转化为 base64 格式；</li>
+<li>本地背景图片的引用路径推荐使用以 <code>~@</code> 开头的绝对路径。</li>
+</ol>
+<div class="highlight-container" data-rel="Css"><figure class="iseeu highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.test2</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&#x27;~@/static/logo.png&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<h2 id="uview-amp-uni-ui"><a href="#uview-amp-uni-ui" class="headerlink" title="uview &amp; uni ui"></a>uview &amp; uni ui</h2><p><code>uview</code> 和 <code>uni ui</code> 都是 和uniapp配套的全端UI框架，可以单独使用，也可以共同使用</p>
+<ol>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://v1.uviewui.com/" >uview ui  1.x <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a0b24b469eec4238b6b4064c9ba482c6~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220814200701250"
+                ></p>
+</li>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://www.uviewui.com/" >uview ui  2.x <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b696a64bd88e46a290b862e2f11c43a2~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220814200722955"
+                ></p>
+</li>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://uniapp.dcloud.net.cn/component/uniui/uni-ui.html" >uni ui <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3b6afeeeb8bd48ce9806f0d969f1136a~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220814200531392"
+                ></p>
+</li>
+</ol>
+<h3 id="uview-ui"><a href="#uview-ui" class="headerlink" title="uview ui"></a>uview ui</h3><p>由于目前 uview 2.x 版本的坑不少，因此我们拿比较稳定的 uview 1.8.6 来演示</p>
+<p>另外，uview ui 的引入方式分为两种，主要是取决于你的项目是如何创建的：</p>
+<ol>
+<li>vue-cli</li>
+<li>HBuilderX</li>
+</ol>
+<h4 id="uview-ui-vue-cli"><a href="#uview-ui-vue-cli" class="headerlink" title="uview ui + vue-cli"></a>uview ui + vue-cli</h4><ol>
+<li><p>安装依赖</p>
+<div class="highlight-container" data-rel="Css"><figure class="iseeu highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="selector-tag">i</span> uview-ui<span class="keyword">@1</span>.8.4 sass</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>在 <code>src/main.js</code> 文件中 全局引入 js库</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> uView <span class="keyword">from</span> <span class="string">&quot;uview-ui&quot;</span>;</span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(uView);</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>在 uni.scss 中 引入 uview 的 sass 主题库</p>
+<div class="highlight-container" data-rel="Less"><figure class="iseeu highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@import</span> <span class="string">&quot;uview-ui/theme.scss&quot;</span>;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>在 App.vue 中 引入 uview 的 sass 主题库</p>
+<div class="highlight-container" data-rel="Scss"><figure class="iseeu highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;style lang=&quot;scss&quot;&gt;</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&quot;uview-ui/index.scss&quot;</span>;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>pages.json 中 配置 easycom</p>
+<div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">	<span class="attr">&quot;easycom&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">		<span class="attr">&quot;^u-(.*)&quot;</span><span class="punctuation">:</span> <span class="string">&quot;uview-ui/components/u-$1/u-$1.vue&quot;</span></span><br><span class="line">	<span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 此为本身已有的内容</span></span><br><span class="line">	<span class="attr">&quot;pages&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">		<span class="comment">// ......</span></span><br><span class="line">	<span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>在 页面中 使用 uview的按钮</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;u-button &gt;默认按钮&lt;/u-button&gt;</span><br><span class="line">&lt;u-button type=&quot;primary&quot;&gt;主要按钮&lt;/u-button&gt;</span><br><span class="line">&lt;u-button type=&quot;success&quot;&gt;成功按钮&lt;/u-button&gt;</span><br><span class="line">&lt;u-button type=&quot;info&quot;&gt;信息按钮&lt;/u-button&gt;</span><br><span class="line">&lt;u-button type=&quot;warning&quot;&gt;警告按钮&lt;/u-button&gt;</span><br><span class="line">&lt;u-button type=&quot;error&quot;&gt;危险按钮&lt;/u-button&gt;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>成功</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3a2d7edff523469890a8bfe6bc539223~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220814213009003"
+                ></p>
+</li>
+</ol>
+<h4 id="uview-ui-HBuilderX"><a href="#uview-ui-HBuilderX" class="headerlink" title="uview ui + HBuilderX"></a>uview ui + HBuilderX</h4><ol>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://ext.dcloud.net.cn/plugin?id=6682" >打开 插件市场，找到 uview 1.x 地址 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</li>
+<li><p>点击<strong>导入插件</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6295c50f51fc41fcafd1df56e754c71f~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220814213549248"
+                ></p>
+</li>
+<li><p>导入成功，可以看到目录下多了 <code>components</code> 文件夹</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/db92490bd6604328ade0d8a2cd946b5c~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220814213731862"
+                ></p>
+</li>
+<li><p>接着在 <code>uni.scss</code>  中导入  uview的主题样式文件  <code>theme.scss</code></p>
+<div class="highlight-container" data-rel="Scss"><figure class="iseeu highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;./theme.scss&#x27;</span>;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>在页面上添加测试代码</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">    &lt;u-button &gt;默认按钮&lt;/u-button&gt;</span><br><span class="line">    &lt;u-button type=&quot;primary&quot;&gt;主要按钮&lt;/u-button&gt;</span><br><span class="line">    &lt;u-button type=&quot;success&quot;&gt;成功按钮&lt;/u-button&gt;</span><br><span class="line">    &lt;u-button type=&quot;info&quot;&gt;信息按钮&lt;/u-button&gt;</span><br><span class="line">    &lt;u-button type=&quot;warning&quot;&gt;警告按钮&lt;/u-button&gt;</span><br><span class="line">    &lt;u-button type=&quot;error&quot;&gt;危险按钮&lt;/u-button&gt;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>点击运行</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7fa660014270456f9000025eb3857544~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220814214825879"
+                ></p>
+</li>
+<li><p>成功</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9c3ce59735f1430a90e6bc9232c51512~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220814214753648"
+                ></p>
+</li>
+</ol>
+<h3 id="uni-ui"><a href="#uni-ui" class="headerlink" title="uni ui"></a>uni ui</h3><h4 id="uni-ui-vue-cli"><a href="#uni-ui-vue-cli" class="headerlink" title="uni ui + vue-cli"></a>uni ui + vue-cli</h4><ol>
+<li><p>安装相关依赖</p>
+<blockquote>
+<p>如果 <code>node</code> 版本小于 16 ，sass-loader 请使用低于 @11.0.0 的版本</p>
+<p>如果 <code>node</code> 版本大于 16 ， <code>sass-loader</code> 建议使用 <code>v8.x</code> 版本</p>
+</blockquote>
+<div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> npm i sass sass-loader@10.1.1  @dcloudio/uni-ui</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>配置easycom</p>
+<p>在 <code>pages.json</code> 中进行配置</p>
+<div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">	<span class="attr">&quot;easycom&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">		<span class="attr">&quot;autoscan&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">		<span class="attr">&quot;custom&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">			<span class="comment">// uni-ui 规则如下配置</span></span><br><span class="line">			<span class="attr">&quot;^uni-(.*)&quot;</span><span class="punctuation">:</span> <span class="string">&quot;@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue&quot;</span></span><br><span class="line">		<span class="punctuation">&#125;</span></span><br><span class="line">	<span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 其他内容</span></span><br><span class="line">	pages<span class="punctuation">:</span><span class="punctuation">[</span></span><br><span class="line">		<span class="comment">// ...</span></span><br><span class="line">	<span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>组件中使用</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;uni-title title=&quot;上报统计数据&quot;&gt;&lt;/uni-title&gt;</span><br><span class="line">&lt;uni-title type=&quot;h1&quot; title=&quot;h1 一级标题 &quot;&gt;&lt;/uni-title&gt;</span><br><span class="line">&lt;uni-title type=&quot;h1&quot; title=&quot;h1 一级标题&quot; color=&quot;#027fff&quot;&gt;&lt;/uni-title&gt;</span><br><span class="line">&lt;uni-title type=&quot;h2&quot; title=&quot;h2 居中&quot; align=&quot;center&quot;&gt;&lt;/uni-title&gt;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h4 id="uni-ui-HBuilderX"><a href="#uni-ui-HBuilderX" class="headerlink" title="uni ui + HBuilderX"></a>uni ui + HBuilderX</h4><ol>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://ext.dcloud.net.cn/plugin?id=55" >打开 uni ui 的对应的插件市场 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</li>
+<li><p>使用 HBuilderX 导入插件</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/634a347bd65d46c19f1a67bbf5682158~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220815220936770"
+                ></p>
+</li>
+<li><p>项目中会多 <code>uni_modules</code> 文件夹</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/db9bb87e39d245f8a313f2ba30a46c54~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220815221130050"
+                ></p>
+</li>
+<li><p>页面中导入代码</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;uni-title title=&quot;上报统计数据&quot;&gt;&lt;/uni-title&gt;</span><br><span class="line">&lt;uni-title type=&quot;h1&quot; title=&quot;h1 一级标题 &quot;&gt;&lt;/uni-title&gt;</span><br><span class="line">&lt;uni-title type=&quot;h1&quot; title=&quot;h1 一级标题&quot; color=&quot;#027fff&quot;&gt;&lt;/uni-title&gt;</span><br><span class="line">&lt;uni-title type=&quot;h2&quot; title=&quot;h2 居中&quot; align=&quot;center&quot;&gt;&lt;/uni-title&gt;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>观察效果</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9c5efca6462640c7a7a5fe645656300d~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220815221251698"
+                ></p>
+</li>
+</ol>
+<h2 id="uniapp-发布到多端"><a href="#uniapp-发布到多端" class="headerlink" title="uniapp 发布到多端"></a>uniapp 发布到多端</h2><h3 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h3><h4 id="普通发布"><a href="#普通发布" class="headerlink" title="普通发布"></a>普通发布</h4><p>项目开发完成后，可以在 HBuilderX中来 打包成 H5项目</p>
+<ol>
+<li><p>打包成H5</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6e7dabdb862347a8a2e6b3835768b477~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823125614926"
+                ></p>
+</li>
+<li><p>填写信息</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/be43ede6997a4e159ead3b3c0b50ed03~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823132813817"
+                ></p>
+</li>
+<li><p>此时，生成的h5项目会放在  <code>unpackage\dist\build\h5</code></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fd62e6b10ff346e8a1eb86841352cbe1~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823132929250"
+                ></p>
+</li>
+</ol>
+<h4 id="发布到uniapp的云环境"><a href="#发布到uniapp的云环境" class="headerlink" title="发布到uniapp的云环境"></a>发布到uniapp的云环境</h4><blockquote>
+<p>需要提前开通 uniCloud 的<a class="link"   href="https://link.juejin.cn/?target=https://unicloud.dcloud.net.cn/login" >云服务 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</blockquote>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bb6ff68aa6fd4b72b71c6696ef117527~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823162616515"
+                ></p>
+<h3 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h3><p>在HBuilderX中，想要发布微信小程序，有两种方式</p>
+<h4 id="普通发布-1"><a href="#普通发布-1" class="headerlink" title="普通发布"></a>普通发布</h4><ol>
+<li><p>点击<strong>发行微信小程序</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d766d15edd304335991d8b94fb83c5d2~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823133101760"
+                ></p>
+</li>
+<li><p>填写 appid</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7a7cead6e90047e78747e1f4d9cf526d~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823133516485"
+                ></p>
+</li>
+<li><p>此时会自动打开 微信开发者工具，然后点击上传即可</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/19d4e7d03afa4f78848fe1600494d359~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823133548073"
+                ></p>
+</li>
+<li><p>然后填写 版本信息即可</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8ec532dea30c40dc9b89375a58e6121b~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823134532450"
+                ></p>
+</li>
+<li><p>成功后，回到微信开发者后台，打开 <strong>管理</strong> <strong>版本管理</strong> 手动点击 <strong>提交审核</strong>。等待审核</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/70e618bf0e234b9d9da01ba75db444ca~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823143011833"
+                ></p>
+</li>
+</ol>
+<h4 id="HBuilderX-发布"><a href="#HBuilderX-发布" class="headerlink" title="HBuilderX 发布"></a>HBuilderX 发布</h4><p>其实还可以利用 HBuilderX 直接发布，不用打开微信开发者工具</p>
+<ol>
+<li><p>首先登录你的微信开发者后台</p>
+</li>
+<li><p>打开 <strong>开发管理</strong>  <strong>小程序代码上传密钥</strong>  <strong>重置</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8f729fa898d6486b8704e2c958a41f3d~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823140358593"
+                ></p>
+</li>
+<li><p>下载 <strong>小程序代码上传密钥</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6055a3725b524d818ac878e38d3b503f~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823140416556"
+                ></p>
+</li>
+<li><p>在企业开发中，记得要开启 <strong>IP白名单</strong>，降低风险</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b9a8422e7daf4bb5a320b3c5caae6215~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823142641838"
+                ></p>
+</li>
+<li><p>选择上传密钥</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/684b170f3d224f8aad065896ebbdd904~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823140518105"
+                ></p>
+</li>
+<li><p>上传成功</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/28b3805d8f264221a9ecf3e0ea337a3a~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823142754479"
+                ></p>
+</li>
+</ol>
+<h3 id="App"><a href="#App" class="headerlink" title="App"></a>App</h3><p>在HBuilderX中发布App的方式分为两种</p>
+<ol>
+<li><a class="link"   href="https://link.juejin.cn/?target=https://nativesupport.dcloud.net.cn/AppDocs/README" >本地离线打包 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>云打包</li>
+</ol>
+<h4 id="云打包"><a href="#云打包" class="headerlink" title="云打包"></a>云打包</h4><p>云打包的意思是利用 dcloud提供的能力，将你本地代码上传到 dcloud 服务器上，在云上打包完成再下载回本地。</p>
+<ol>
+<li><p>打开 <code>mainifest.json</code>    设置 uniapp 应用标识 <code>AppID</code> <em>这个是uniapp应用的id，不是微信小程序的id</em></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/615f701086eb49f5a566bba8089c22f6~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823180115960"
+                ></p>
+</li>
+<li><p>设置 App 支持CPU类型</p>
+<p><strong>App常用其他设置</strong>   <strong>支持CPU类型</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fb8b0742a4b24bf8aa2119c28c47817e~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823180708757"
+                ></p>
+</li>
+<li><p>设置使用原生隐私正则提示框</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f77f43a20cc9450bb83c4180384d4e6c~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823180742771"
+                ></p>
+</li>
+<li><p><strong>发行</strong> -  <strong>原生App - 云打包</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4fa6df86fc5a4b74b1382ee54f1de2bb~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823180815844"
+                ></p>
+</li>
+<li><p>填写相关信息</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c520cbc8cca346b7b1564b362cf369a9~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823180949370"
+                ></p>
+</li>
+<li><p>打包成功</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/728581bd02b34156acd85720bfb31927~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image-20220823181726216"
+                ></p>
+</li>
+</ol>
+<h2 id="uniapp-其他资源"><a href="#uniapp-其他资源" class="headerlink" title="uniapp 其他资源"></a>uniapp 其他资源</h2><ol>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://uniapp.dcloud.net.cn/faq.html" >uniapp 常见问题汇总 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</li>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://uniapp.dcloud.net.cn/matter.html" >uniapp 跨端注意事项汇总 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</li>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://uniapp.dcloud.net.cn/tutorial/performance.html" >运行原理以及优化建议 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</li>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://ask.dcloud.net.cn/explore/" >问答平台 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</li>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://ask.dcloud.net.cn/explore/" >uniapp github <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</li>
+<li><p><a class="link"   href="https://link.juejin.cn/?target=https://ask.dcloud.net.cn/article/13015" >uniapp 官方团队付费支持 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</li>
+<li><p>uniapp优秀案例源码地址</p>
+<ol>
+<li><a class="link"   href="https://link.juejin.cn/?target=https://github.com/stavyan/TinyShop-UniApp" >RF 微商城 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://link.juejin.cn/?target=https://github.com/ITmonkey-cn/shopro-uniapp" >shopro商城 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://link.juejin.cn/?target=https://github.com/gz-yami/mall4j" >Mall4j商城 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://link.juejin.cn/?target=https://github.com/lilishop/lilishop" >Lilishop 商城 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://link.juejin.cn/?target=https://github.com/youlaitech/youlai-mall" >有来商城 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ol>
+</li>
+</ol>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：</li>
+        <li>Post author：dtd-5</li>
+        <li>Create time：2023-02-25 14:35:31</li>
+        <li>
+            Post link：https://github.com/dtd-5/2023/02/25/uniapp入门到实战项目教程/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/02/25/%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0vue-router/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item"></span>
+                                    <span class="post-nav-item">Prev posts</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/02/23/jquery/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">jquery</span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title"></div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#uniapp%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D"><span class="nav-text">uniapp项目结构介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#uniapp%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83"><span class="nav-text">uniapp开发规范</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-%E9%A1%B5%E9%9D%A2%E5%92%8C%E7%BB%84%E4%BB%B6%E6%96%87%E4%BB%B6%E9%81%B5%E5%BE%AAvue%E7%9A%84%E8%A7%84%E8%8C%83"><span class="nav-text">1.页面和组件文件遵循vue的规范</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-%E5%86%85%E7%BD%AE%E6%A0%87%E7%AD%BE%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%A7%84%E8%8C%83"><span class="nav-text">2.内置标签使用小程序的规范</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%92%8C%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E4%BD%BF%E7%94%A8vue%E7%9A%84%E8%A7%84%E8%8C%83"><span class="nav-text">3.数据绑定和事件处理使用vue的规范</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4-%E8%83%BD%E5%8A%9B%E6%8E%A5%E5%8F%A3API-%E4%BD%BF%E7%94%A8-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%A7%84%E8%8C%83"><span class="nav-text">4.能力接口API 使用 微信小程序的规范</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#5-uniapp%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-text">5.uniapp生命周期</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#6-%E5%BA%94%E7%94%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9FApp-vue"><span class="nav-text">6.应用生命周期App.vue</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#7-%E9%A1%B5%E9%9D%A2%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-text">7.页面生命周期</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#8-%E7%BB%84%E4%BB%B6%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-text">8.组件生命周期</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8D%95%E4%BD%8D-rpx"><span class="nav-text">响应式单位 rpx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#scoped"><span class="nav-text">scoped</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#uniapp-%E5%A4%9A%E7%AB%AF%E5%BC%80%E5%8F%91"><span class="nav-text">uniapp 多端开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91"><span class="nav-text">条件编译</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#static-%E7%9B%AE%E5%BD%95%E7%9A%84%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91"><span class="nav-text">static 目录的条件编译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B4%E4%BD%93%E7%9B%AE%E5%BD%95%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91"><span class="nav-text">整体目录条件编译</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flex%E5%B8%83%E5%B1%80"><span class="nav-text">flex布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%BA%E5%AF%B8%E5%8D%95%E4%BD%8D"><span class="nav-text">尺寸单位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css%E5%8F%98%E9%87%8F"><span class="nav-text">css变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-text">背景图片</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#uview-amp-uni-ui"><span class="nav-text">uview &amp; uni ui</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#uview-ui"><span class="nav-text">uview ui</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#uview-ui-vue-cli"><span class="nav-text">uview ui + vue-cli</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#uview-ui-HBuilderX"><span class="nav-text">uview ui + HBuilderX</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uni-ui"><span class="nav-text">uni ui</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#uni-ui-vue-cli"><span class="nav-text">uni ui + vue-cli</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#uni-ui-HBuilderX"><span class="nav-text">uni ui + HBuilderX</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#uniapp-%E5%8F%91%E5%B8%83%E5%88%B0%E5%A4%9A%E7%AB%AF"><span class="nav-text">uniapp 发布到多端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#H5"><span class="nav-text">H5</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%99%AE%E9%80%9A%E5%8F%91%E5%B8%83"><span class="nav-text">普通发布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%91%E5%B8%83%E5%88%B0uniapp%E7%9A%84%E4%BA%91%E7%8E%AF%E5%A2%83"><span class="nav-text">发布到uniapp的云环境</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F"><span class="nav-text">微信小程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%99%AE%E9%80%9A%E5%8F%91%E5%B8%83-1"><span class="nav-text">普通发布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HBuilderX-%E5%8F%91%E5%B8%83"><span class="nav-text">HBuilderX 发布</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#App"><span class="nav-text">App</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%91%E6%89%93%E5%8C%85"><span class="nav-text">云打包</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#uniapp-%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90"><span class="nav-text">uniapp 其他资源</span></a></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-regular fa-computer-classic"></i>&nbsp;&nbsp;<a href="/">dtd-5</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        VISITOR COUNT&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        TOTAL PAGE VIEWS&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a></span>
+                <br> 
+            <span class="theme-version-container">THEME&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v1.1.2</a>
+        </div>
+        
+        
+        
+            <div id="start_time_div" style="display:none">
+                2022/8/17 11:45:14
+            </div>
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="unfolded-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="fa-regular fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="folded-tools-list">
+        <li class="right-bottom-tools tool-toggle-show flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/layouts/menu-shrink.js"></script>
+
+<script src="/js/tools/go-top-bottom.js"></script>
+
+<script src="/js/tools/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/tools/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/layouts/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/tools/toc-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/layouts/toc.js"></script>
+
+<script src="/js/plugins/tabs.js"></script>
+
+    
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

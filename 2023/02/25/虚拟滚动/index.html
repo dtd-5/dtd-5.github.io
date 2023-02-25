@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="dtd-5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2023/02/25/虚拟滚动/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Redefine Theme">
+    <meta property="og:description" content="Hexo Theme Redefine">
+    <meta property="og:url" content="http://example.com2023/02/25/虚拟滚动/">
+    <meta property="og:image" content="/images/redefine-logo.svg">
+    <meta property="og:site_name" content="小破站">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Redefine Theme">
+    <meta name="twitter:description" content="Hexo Theme Redefine">
+    <meta name="twitter:image" content="/images/redefine-logo.svg">
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-logo.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-logo.svg">
+    <meta name="theme-color" content="#005080">
+    <link rel="shortcut icon" href="/images/redefine-logo.svg">
+    
+    <title>
+        
+        小破站
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/assets/fonts.css">
+
+    
+    
+    
+    
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/redefine-avatar.svg","favicon":"/images/redefine-logo.svg","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://evan.beee.top/img/wallhaven-wqery6-light.webp","dark":"https://evan.beee.top/img/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":"只要朝着一个方向努力，一切都会变得得心应手。","custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":true},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.1.2","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}}};
+    REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+    
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="menu-wrapper">
+    
+    <div class="menu-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                小破站
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        HOME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        ARCHIVES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/categories"  >
+                                    
+                                        
+                                        CATEGORIES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/tags"  >
+                                    
+                                        
+                                        TAGS
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/links"  >
+                                    
+                                        
+                                        LINKS
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        ABOUT&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://github.com/dtd-5">GITHUB
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="menu-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                HOME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                ARCHIVES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/categories"  >
+                             
+                                
+                                CATEGORIES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/tags"  >
+                             
+                                
+                                TAGS
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/links"  >
+                             
+                                
+                                LINKS
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                ABOUT&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/dtd-5">GITHUB</a>
+                            </li>
+                        
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular"></h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/redefine-avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">dtd-5</span>
+                            
+                                <span class="author-label">lol</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="pc">2023-02-25 21:32:08</span>
+        <span class="mobile">2023-02-25 21:32</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="pc">2023-02-25 21:33:52</span>
+            <span class="mobile">2023-02-25 21:33</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">title: 虚拟滚动</span><br><span class="line">categories: 性能优化</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h1 id="vue长列表优化-虚拟滚动"><a href="#vue长列表优化-虚拟滚动" class="headerlink" title="vue长列表优化-虚拟滚动"></a>vue长列表优化-虚拟滚动</h1><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-passport.byteimg.com/img/mosaic-legacy/3797/2889309425~100x100.awebp"
+                      alt="img"
+                ></p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在移动端项目中，我们通常会使用懒加载来加载列表，优点很明显，不需要一次将数据请求完，当用户下拉到底部时，才使用ajax动态从服务器拉取接下来的数据。但是这又导致了一个问题，如果用户疯狂进行下拉呢，这就会导致浏览器创建多个多余的节点，出现冗余，并且你拥有多少个节点，vue就会diff多少个节点，这样的场景会带来多余的性能消耗和内存占用。试想一下，如果我们能只渲染用户可视区域的节点，便能很好的解决这个问题，这便是虚拟滚动的产生背景。</p>
+<h1 id="虚拟滚动的原理"><a href="#虚拟滚动的原理" class="headerlink" title="虚拟滚动的原理"></a>虚拟滚动的原理</h1><p>首先我们要知道，虚拟滚动是用到Vue的v-for实现的，上面也解释了，虚拟滚动是只渲染可视区域，那么我们可视区域的节点内容必然会随着用户的滚动条的改变而改变，假设一个页面就只能显示n个节点，那么我们如何让这n个需要变动的节点跟着滚动条动呢？</p>
+<blockquote>
+<p>使用CSS<code>transform:translateY()</code>，这样，我们只需要让这n个节点跟着滚动条移动，我们滚动到哪里，节点替换到哪里。</p>
+</blockquote>
+<p>要实现虚拟滚动你只需要知道以下条件:</p>
+<ol>
+<li>一个页面能显示多少个item?</li>
+<li>应该从哪个节点开始渲染?</li>
+<li>什么时候渲染?</li>
+<li>如何渲染</li>
+</ol>
+<h2 id="一个页面能够显示多少个item"><a href="#一个页面能够显示多少个item" class="headerlink" title="一个页面能够显示多少个item?"></a>一个页面能够显示多少个item?</h2><p>页面容量&#x3D;页面大小(clientHeight)&#x2F;单个item大小</p>
+<p>volume&#x3D;Math.ceil(clientHeight&#x2F;itemHeight)+4;</p>
+<p>至于这里为什么要+4，后面会介绍</p>
+<h2 id="应该从哪个节点开始渲染"><a href="#应该从哪个节点开始渲染" class="headerlink" title="应该从哪个节点开始渲染?"></a>应该从哪个节点开始渲染?</h2><p>我们假设现在滚动条滚动到了x的位置，我们是否就可以计算出这个x这个高度可以容纳多少个节点,进而得出应该从哪个节点开始渲染呢？答案是肯定的，js为我们提供了<code>scrollTop</code>这个属性来获取滚动条卷入的高度。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    <span class="title function_">getCurStart</span>(<span class="params">scrollTop</span>)&#123;</span><br><span class="line">      <span class="comment">//卷去了多少个</span></span><br><span class="line">      <span class="keyword">return</span> <span class="title class_">Math</span>.<span class="title function_">floor</span>(scrollTop/(itemHeight));</span><br><span class="line">    &#125;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="什么时候渲染"><a href="#什么时候渲染" class="headerlink" title="什么时候渲染?"></a>什么时候渲染?</h2><p>渲染时机也很简单，列表中第一个节点被完全卷入的时候我们需要执行渲染，因为这个时候被完全卷去的节点已经完全看不到了，我们需要将它顶下来然后再将其渲染成下一项的数据，这么说可能有点难理解，放张图吧~</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8601313f4c1045bca77637cd949e58f6~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp"
+                      alt="image.png"
+                ></p>
+<p>如上图，当1被卷去的时候(完全离开我们的可视区)，我们就利用css的translateY将它顶下来，渲染成2，你会发现发现在可视区域外多出来了一个节点，为了保证滑动的连贯性，你可以多设置几个冗余节点。</p>
+<h2 id="如何渲染"><a href="#如何渲染" class="headerlink" title="如何渲染"></a>如何渲染</h2><p>这部分就是最核心的代码了。在这会出现一个问题，由于js并不是对每次都会对高频触发的回调进行响应，你如果不获取一个可以被itemHeight整除的偏移量，你极有可能拉回去的时候看到第一个节点的偏移量并不是0。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">    <span class="title function_">onScroll</span>(<span class="params"></span>)&#123;</span><br><span class="line">      <span class="comment">//scrollTop常量记录当前滚动的高度</span></span><br><span class="line">      <span class="keyword">const</span> scrollTop=<span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">list</span>.<span class="property">scrollTop</span>;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> start=<span class="variable language_">this</span>.<span class="title function_">getCurStart</span>(scrollTop);</span><br><span class="line">      <span class="comment">//对比上一次的开始节点 比较是否发生变化，发生变化后便重新渲染列表</span></span><br><span class="line">      <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">start</span>!=start)&#123;</span><br><span class="line">        <span class="comment">//在这需要获得一个可以被itemHeight整除的数来作为item的偏移量</span></span><br><span class="line">        <span class="keyword">const</span> offsetY = scrollTop - (scrollTop % <span class="variable language_">this</span>.<span class="property">itemHeight</span>);</span><br><span class="line">        <span class="comment">//使用slice拿到需要渲染的那一部分</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">renderList</span>=<span class="variable language_">this</span>.<span class="property">list</span>.<span class="title function_">slice</span>(start,<span class="variable language_">this</span>.<span class="property">start</span>+<span class="variable language_">this</span>.<span class="property">volume</span>);</span><br><span class="line">        <span class="comment">//这里的top用于设置translateY  transform:translateY($&#123;top&#125;px)</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">top</span>=offsetY;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">start</span>=start;</span><br><span class="line">    &#125;,</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="优化处理"><a href="#优化处理" class="headerlink" title="优化处理"></a>优化处理</h1><p>onScroll属高频触发回调，为了节约性能消耗，我们需对其加以限制，让其最短50ms触发一次。以下是封装节流函数。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span>(<span class="params">fn, delay</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> lock = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="function">(<span class="params">...args</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (lock)</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        <span class="comment">//进入加锁</span></span><br><span class="line">        lock = <span class="literal">true</span>;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">            fn.<span class="title function_">apply</span>(<span class="variable language_">this</span>, args);</span><br><span class="line">            <span class="comment">//执行完毕解锁</span></span><br><span class="line">            lock = <span class="literal">false</span>;</span><br><span class="line">        &#125;, delay);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;list&quot;</span> @<span class="attr">scroll</span>=<span class="string">&quot;scrollHandle&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;list&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span> <span class="attr">v-for</span>=<span class="string">&quot;(item,index) in renderList&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;index&quot;</span>  <span class="attr">:style</span>=<span class="string">&quot;`height:$&#123;itemHeight&#125;px;line-height:$&#123;itemHeight&#125;px;transform:translateY($&#123;top&#125;px)`&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          &#123;&#123;item&#125;&#125;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> throttle <span class="keyword">from</span> <span class="string">&#x27;@/utils/throttle&#x27;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">name</span>: <span class="string">&#x27;App&#x27;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title function_">data</span>(<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">list</span>:[],<span class="comment">//完整列表</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">itemHeight</span>:<span class="number">60</span>,<span class="comment">//每一项的高度</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">renderList</span>:[],<span class="comment">//需要渲染的列表</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">start</span>:<span class="number">0</span>,<span class="comment">//开始渲染的位置</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">volume</span>:<span class="number">0</span>,<span class="comment">//页面的容积:能装下多少个节点</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">top</span>:<span class="number">0</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      scroll,<span class="comment">//用于初始化节流</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title function_">mounted</span>(<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="variable language_">this</span>.<span class="title function_">initList</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">const</span> cHeight=<span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">clientHeight</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">//计算页面能容纳下几个节点并且设置四个节点作为冗余</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="variable language_">this</span>.<span class="property">volume</span>=<span class="title class_">Math</span>.<span class="title function_">ceil</span>(cHeight/<span class="variable language_">this</span>.<span class="property">itemHeight</span>)+<span class="number">4</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">//设置要渲染的列表 设置成能够容纳下的最大元素个数</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="variable language_">this</span>.<span class="property">renderList</span>=<span class="variable language_">this</span>.<span class="property">list</span>.<span class="title function_">slice</span>(<span class="number">0</span>,<span class="variable language_">this</span>.<span class="property">volume</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">//初始化节流函数 最短50毫秒触发一次</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="variable language_">this</span>.<span class="property">scroll</span>=<span class="title function_">throttle</span>(<span class="variable language_">this</span>.<span class="property">onScroll</span>,<span class="number">50</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">methods</span>: &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">//初始化列表 ，循环渲染 500条</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">initList</span>(<span class="params"></span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;<span class="number">500</span>;i++)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="variable language_">this</span>.<span class="property">list</span>.<span class="title function_">push</span>(i);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">scrollHandle</span>(<span class="params"></span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="variable language_">this</span>.<span class="title function_">scroll</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">onScroll</span>(<span class="params"></span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="comment">//scrollTop常量记录当前滚动的高度</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="keyword">const</span> scrollTop=<span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">list</span>.<span class="property">scrollTop</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="keyword">const</span> start=<span class="variable language_">this</span>.<span class="title function_">getCurStart</span>(scrollTop);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="comment">//对比上一次的开始节点 比较是否发生变化，发生变化后便重新渲染列表</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">start</span>!=start)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">//在这需要获得一个可以被itemHeight整除的数来作为item的偏移量</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">const</span> offsetY = scrollTop - (scrollTop % <span class="variable language_">this</span>.<span class="property">itemHeight</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">//使用slice拿到需要渲染的那一部分</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="variable language_">this</span>.<span class="property">renderList</span>=<span class="variable language_">this</span>.<span class="property">list</span>.<span class="title function_">slice</span>(start,<span class="variable language_">this</span>.<span class="property">start</span>+<span class="variable language_">this</span>.<span class="property">volume</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">//这里的top用于设置translateY  transform:translateY($&#123;top&#125;px)</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="variable language_">this</span>.<span class="property">top</span>=offsetY;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="variable language_">this</span>.<span class="property">start</span>=start;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">getCurStart</span>(<span class="params">scrollTop</span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="comment">//卷去了多少个</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="keyword">return</span> <span class="title class_">Math</span>.<span class="title function_">floor</span>(scrollTop/(<span class="variable language_">this</span>.<span class="property">itemHeight</span>));</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">*&#123;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">  <span class="attribute">margin</span>: <span class="number">0</span>;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">  <span class="attribute">padding</span>: <span class="number">0</span>;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml"><span class="selector-class">.list</span>&#123;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">  <span class="attribute">height</span>: <span class="number">100vh</span>;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">  <span class="attribute">overflow</span>: scroll;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml"><span class="selector-class">.item</span>&#123;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">  <span class="attribute">text-align</span>: center;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">  <span class="attribute">width</span>: <span class="number">100%</span>;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">  <span class="attribute">box-sizing</span>: border-box;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">  <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid lightgray;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure></div>
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：</li>
+        <li>Post author：dtd-5</li>
+        <li>Create time：2023-02-25 21:32:08</li>
+        <li>
+            Post link：https://github.com/dtd-5/2023/02/25/虚拟滚动/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/02/25/%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0vue-router/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item"></span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title"></div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vue%E9%95%BF%E5%88%97%E8%A1%A8%E4%BC%98%E5%8C%96-%E8%99%9A%E6%8B%9F%E6%BB%9A%E5%8A%A8"><span class="nav-text">vue长列表优化-虚拟滚动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%BB%9A%E5%8A%A8%E7%9A%84%E5%8E%9F%E7%90%86"><span class="nav-text">虚拟滚动的原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2%E8%83%BD%E5%A4%9F%E6%98%BE%E7%A4%BA%E5%A4%9A%E5%B0%91%E4%B8%AAitem"><span class="nav-text">一个页面能够显示多少个item?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E8%AF%A5%E4%BB%8E%E5%93%AA%E4%B8%AA%E8%8A%82%E7%82%B9%E5%BC%80%E5%A7%8B%E6%B8%B2%E6%9F%93"><span class="nav-text">应该从哪个节点开始渲染?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E6%B8%B2%E6%9F%93"><span class="nav-text">什么时候渲染?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%B8%B2%E6%9F%93"><span class="nav-text">如何渲染</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BC%98%E5%8C%96%E5%A4%84%E7%90%86"><span class="nav-text">优化处理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81"><span class="nav-text">完整代码</span></a></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-regular fa-computer-classic"></i>&nbsp;&nbsp;<a href="/">dtd-5</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        VISITOR COUNT&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        TOTAL PAGE VIEWS&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a></span>
+                <br> 
+            <span class="theme-version-container">THEME&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v1.1.2</a>
+        </div>
+        
+        
+        
+            <div id="start_time_div" style="display:none">
+                2022/8/17 11:45:14
+            </div>
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="unfolded-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="fa-regular fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="folded-tools-list">
+        <li class="right-bottom-tools tool-toggle-show flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/layouts/menu-shrink.js"></script>
+
+<script src="/js/tools/go-top-bottom.js"></script>
+
+<script src="/js/tools/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/tools/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/layouts/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/tools/toc-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/layouts/toc.js"></script>
+
+<script src="/js/plugins/tabs.js"></script>
+
+    
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
